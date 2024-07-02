@@ -14,6 +14,9 @@
 		59F2ABB02C335D300043852A /* OnatCardTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59F2ABAF2C335D300043852A /* OnatCardTests.swift */; };
 		59F2ABBA2C335D300043852A /* OnatCardUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59F2ABB92C335D300043852A /* OnatCardUITests.swift */; };
 		59F2ABBC2C335D300043852A /* OnatCardUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59F2ABBB2C335D300043852A /* OnatCardUITestsLaunchTests.swift */; };
+		59F2ABD12C33FE790043852A /* InfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59F2ABD02C33FE790043852A /* InfoView.swift */; };
+		59F2ABD52C33FF780043852A /* Montserrat-VariableFont_wght.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 59F2ABD42C33FF780043852A /* Montserrat-VariableFont_wght.ttf */; };
+		59F2ABD72C33FF870043852A /* AntonSC-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 59F2ABD62C33FF860043852A /* AntonSC-Regular.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +47,10 @@
 		59F2ABB52C335D300043852A /* OnatCardUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OnatCardUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		59F2ABB92C335D300043852A /* OnatCardUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnatCardUITests.swift; sourceTree = "<group>"; };
 		59F2ABBB2C335D300043852A /* OnatCardUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnatCardUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		59F2ABD02C33FE790043852A /* InfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoView.swift; sourceTree = "<group>"; };
+		59F2ABD42C33FF780043852A /* Montserrat-VariableFont_wght.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-VariableFont_wght.ttf"; sourceTree = "<group>"; };
+		59F2ABD62C33FF860043852A /* AntonSC-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "AntonSC-Regular.ttf"; sourceTree = "<group>"; };
+		59F2ABD82C33FFC00043852A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,8 +101,11 @@
 		59F2AB9D2C335D2E0043852A /* OnatCard */ = {
 			isa = PBXGroup;
 			children = (
+				59F2ABD82C33FFC00043852A /* Info.plist */,
+				59F2ABD32C33FF5C0043852A /* fonts */,
 				59F2AB9E2C335D2E0043852A /* OnatCardApp.swift */,
 				59F2ABA02C335D2E0043852A /* ContentView.swift */,
+				59F2ABD02C33FE790043852A /* InfoView.swift */,
 				59F2ABA22C335D300043852A /* Assets.xcassets */,
 				59F2ABA42C335D300043852A /* Preview Content */,
 			);
@@ -125,6 +135,15 @@
 				59F2ABBB2C335D300043852A /* OnatCardUITestsLaunchTests.swift */,
 			);
 			path = OnatCardUITests;
+			sourceTree = "<group>";
+		};
+		59F2ABD32C33FF5C0043852A /* fonts */ = {
+			isa = PBXGroup;
+			children = (
+				59F2ABD42C33FF780043852A /* Montserrat-VariableFont_wght.ttf */,
+				59F2ABD62C33FF860043852A /* AntonSC-Regular.ttf */,
+			);
+			path = fonts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -231,7 +250,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				59F2ABD72C33FF870043852A /* AntonSC-Regular.ttf in Resources */,
 				59F2ABA62C335D300043852A /* Preview Assets.xcassets in Resources */,
+				59F2ABD52C33FF780043852A /* Montserrat-VariableFont_wght.ttf in Resources */,
 				59F2ABA32C335D300043852A /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -258,6 +279,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				59F2ABA12C335D2E0043852A /* ContentView.swift in Sources */,
+				59F2ABD12C33FE790043852A /* InfoView.swift in Sources */,
 				59F2AB9F2C335D2E0043852A /* OnatCardApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -425,6 +447,7 @@
 				DEVELOPMENT_TEAM = 839PGN9VHU;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = OnatCard/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -454,6 +477,7 @@
 				DEVELOPMENT_TEAM = 839PGN9VHU;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = OnatCard/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
